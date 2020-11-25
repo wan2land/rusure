@@ -1,0 +1,46 @@
+{
+  "name": "rusure",
+  "version": "2.0.0",
+  "description": ".",
+  "keywords": [
+    "build",
+    "node_modules",
+    "distribute",
+    "distribution",
+    "awscdk",
+    "cdk",
+    "typescript"
+  ],
+  "author": "Changwan Jun <wan2land@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wan2land/rusure.git"
+  },
+  "bin": {
+    "rusure": "lib/bin/cli.js"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prepack": "npm run test && npm run build",
+    "build": "rimraf ./lib && tsc --emitDeclarationOnly && babel src --out-dir lib --extensions \".ts\" --source-maps inline",
+    "test": "npm run test:lint",
+    "test:lint": "eslint src/**/**/*.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "7.10.5",
+    "@babel/core": "7.10.5",
+    "@babel/plugin-proposal-class-properties": "7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "7.10.4",
+    "@babel/preset-env": "7.10.4",
+    "@babel/preset-typescript": "7.10.4",
+    "@types/node": "12.12.50",
+    "eslint": "7.5.0",
+    "eslint-config-stable": "0.8.0",
+    "rimraf": "3.0.2",
+    "typescript": "3.9.7"
+  }
+}
