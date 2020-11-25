@@ -1,4 +1,4 @@
-# RU Sure?
+# R U Sure?
 
 <p>
   <a href="https://github.com/wan2land/rusure/actions?query=workflow%3A%22Node.js+CI%22"><img alt="Build" src="https://img.shields.io/github/workflow/status/wan2land/rusure/Node.js%20CI?logo=github&style=flat-square" /></a>
