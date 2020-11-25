@@ -7,9 +7,9 @@ import { createInterface } from 'readline'
     process.exit(0)
     return
   }
-  
-  process.stdout.write((process.argv[2] || 'Are you sure? (y/N)') + ' ')
-  
+
+  process.stdout.write(`${process.argv[2] || 'Are you sure? (y/N)'} `)
+
   createInterface(process.stdin).on('line', (line) => {
     process.exit(line.trim().toLowerCase() === 'y' ? 0 : 1)
   })
