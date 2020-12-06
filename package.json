@@ -1,6 +1,6 @@
 {
   "name": "rusure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Print \"Are you sure?\" before critical commands.",
   "keywords": [
     "build",
