@@ -10,7 +10,7 @@
   <a href="https://david-dm.org/wan2land/rusure?type=dev"><img alt="devDependencies Status" src="https://img.shields.io/david/dev/wan2land/rusure.svg?style=flat-square" /></a>
 </p>
 
-Copy source files and `node_modules` without `devDependencies` to destination directory.
+Print "Are you sure?" before critical commands.
 
 ## Installation
 
